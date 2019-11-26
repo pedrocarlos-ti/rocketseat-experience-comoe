@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import { darken } from "polished"
 
-export const Wrapper = styled.div`
+export const Container = styled.div`
   height: 100%;
-  background: linear-gradient(-90deg, #f5f6fa, #a3ee23);
+  background: linear-gradient(-90deg, #5d8cf6, #cfd9ed);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +40,7 @@ export const Content = styled.div`
       font-weight: bold;
     }
 
-    button {
+    a {
       margin: 5px 0 0;
       height: 44px;
       background: #3b9eff;
@@ -49,6 +49,7 @@ export const Content = styled.div`
       border: 0;
       border-radius: 4px;
       font-size: 16px;
+      line-height: 41px;
       transition: background 0.3s;
 
       &:hover {

@@ -1,8 +1,14 @@
 import React from 'react';
 import { Wrapper, Container } from "./styles";
 import { Link } from 'react-router-dom';
+import Select from 'react-select'
 
 import StepWizard from "react-step-wizard";
+
+const options = [
+  { value: 0, label: 'Sim' },
+  { value: 1, label: 'Não' }
+]
 
 export default function Wizard() {
   return (
@@ -13,28 +19,28 @@ export default function Wizard() {
         <form>
           <Wrapper>
             <label htmlFor="">Você gosta de computadores ?</label>
-            <select>
-              <option>Sim</option>
-              <option>Não</option>
-            </select>
+            <Select 
+              options={options} 
+              placeholder="Selecione uma opção"
+            />
           </Wrapper>
 
           <Wrapper>
             <label htmlFor="">
               Tem curiosidade de como faz para construir uma rede social ?
             </label>
-            <select>
-              <option>Sim</option>
-              <option>Não</option>
-            </select>
+            <Select 
+              options={options} 
+              placeholder="Selecione uma opção"
+            />
           </Wrapper>
 
           <Wrapper>
             <label htmlFor="">Já desmontou um computador ?</label>
-            <select>
-              <option>Sim</option>
-              <option>Não</option>
-            </select>
+            <Select 
+              options={options} 
+              placeholder="Selecione uma opção"
+            />
           </Wrapper>
 
           <Link to="list">
