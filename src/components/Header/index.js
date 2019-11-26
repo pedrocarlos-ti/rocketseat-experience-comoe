@@ -9,15 +9,15 @@ export default function Header() {
     <Container>
       <Content>
         <nav>
-          <img src={logo} alt="goBarber" />
-          <Link to="/lits">DASHBOARD</Link>
+          <img src={logo} alt="" />
+          <Link to="/lits">MENTORES</Link>
         </nav>
 
         <aside>
           <Profile>
             <div>
-              <strong>Joao de Barro</strong>
-              <Link to="/profile">Meu Perfil</Link>
+              <strong>Diego Fernandes</strong>
+              <Link to="/">Meu Perfil</Link>
             </div>
             <img
               src={"https://api.adorable.io/avatars/50/abott@adorable.png"}

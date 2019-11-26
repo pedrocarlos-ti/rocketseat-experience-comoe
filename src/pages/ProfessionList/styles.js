@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.div`
   display: flex;
@@ -7,7 +7,7 @@ export const Container = styled.div`
   margin: 0px;
   justify-items: center;
   justify-content: center;
-`;
+`
 
 export const Title = styled.h2`
   @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
@@ -17,7 +17,7 @@ export const Title = styled.h2`
   font-family: "Roboto", sans-serif;
   text-align: center;
   color: #40376e;
-`;
+`
 
 export const List = styled.div`
   width: 250px;
@@ -29,11 +29,11 @@ export const List = styled.div`
   :hover {
     border: 1px solid #36558f;
   }
-`;
+`
 
 export const Image = styled.img`
   max-width: 250px;
-`;
+`
 
 export const Description = styled.h4`
   @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
@@ -43,7 +43,7 @@ export const Description = styled.h4`
   text-align: justify;
   padding: 10px;
   color: #40376e;
-`;
+`
 
 export const Text = styled.h2`
   font-size: 22px;
@@ -51,4 +51,4 @@ export const Text = styled.h2`
   font-family: "Roboto", sans-serif;
   text-align: center;
   color: #40376e;
-`;
+`
