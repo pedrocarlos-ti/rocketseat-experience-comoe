@@ -1,5 +1,6 @@
 import React from "react"
 import { Container, List, Title, Text, Image, Description } from "./styles"
+import { Link } from 'react-router-dom';
 
 function cutText(text) {
   if (text.length > 70) {
@@ -56,11 +57,13 @@ export default function ProfessionList() {
   return (
     <Container>
       {profissions.map(p => (
-        <List key={p.title} onClick={e => console.log(p.title)}>
-          <Title>{p.title}</Title>
-          <Image src={p.image} />
-          <Description>{cutText(p.description)}</Description>
-        </List>
+        <Link to="signin">
+          <List key={p.title} onClick={e => console.log(p.title)}>
+            <Title>{p.title}</Title>
+            <Image src={p.image} />
+            <Description>{cutText(p.description)}</Description>
+          </List>
+        </Link>
       ))}
       <Text>{profissions.length} Profissões encontradas.</Text>
     </Container>
