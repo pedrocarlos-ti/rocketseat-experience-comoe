@@ -1,7 +1,7 @@
 import React from "react"
 import { Container, List, Title, Text, Image, Description } from "./styles"
-import { Link } from 'react-router-dom';
-import Header from "../../components/Header"
+import { Link } from "react-router-dom"
+// mport Header from "../../components/Header"
 
 function cutText(text) {
   if (text.length > 70) {
