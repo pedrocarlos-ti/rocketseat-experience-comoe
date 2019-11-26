@@ -1,5 +1,6 @@
 import React from "react"
 import { Container, List, Title, Text, Image, Description } from "./styles"
+import Header from "../../components/Header"
 
 function cutText(text) {
   if (text.length > 70) {
@@ -54,15 +55,18 @@ const profissions = [
 
 export default function ProfessionList() {
   return (
-    <Container>
-      {profissions.map(p => (
-        <List key={p.title} onClick={e => console.log(p.title)}>
-          <Title>{p.title}</Title>
-          <Image src={p.image} />
-          <Description>{cutText(p.description)}</Description>
-        </List>
-      ))}
-      <Text>{profissions.length} Profissões encontradas.</Text>
-    </Container>
+    <>
+      <Header />
+      <Container>
+        {profissions.map(p => (
+          <List key={p.title} onClick={e => console.log(p.title)}>
+            <Title>{p.title}</Title>
+            <Image src={p.image} />
+            <Description>{cutText(p.description)}</Description>
+          </List>
+        ))}
+        <Text>{profissions.length} Profissões encontradas.</Text>
+      </Container>
+    </>
   )
 }

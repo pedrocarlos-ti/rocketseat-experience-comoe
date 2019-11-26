@@ -1,24 +1,26 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { Form, Input } from "@rocketseat/unform"
 
+import { Container, Content } from "./styles"
 import logo from "../../assets/logo.svg"
 
 export default function SignIn() {
   return (
-    <>
-      <img src={logo} alt="GoBarber" />
+    <Container>
+      <Content>
+        <img src={logo} alt="" />
 
-      <Form>
-        <Input name="email" type="email" placeholder="E-mail" />
-        <Input name="password" type="password" placeholder="Senha" />
+        <form>
+          <input placeholder="E-mail" />
+          <input placeholder="Senha" />
 
-        <button>
-          <Link to="/list" className="button">
-            Acessar
-          </Link>
-        </button>
-      </Form>
-    </>
+          <button>
+            <Link to="list" className="button">
+              Acessar
+            </Link>
+          </button>
+        </form>
+      </Content>
+    </Container>
   )
 }
